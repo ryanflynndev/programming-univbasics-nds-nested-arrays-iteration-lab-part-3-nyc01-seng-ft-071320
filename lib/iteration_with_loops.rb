@@ -13,7 +13,7 @@ def join_nested_strings(src)
     while index < src[count].length do 
       
       if src[count][index].class == str.class
-        str += src[count][index]
+        str += " " + src[count][index]
       end
       index += 1 
     end 
