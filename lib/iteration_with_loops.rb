@@ -12,6 +12,12 @@ def join_nested_strings(src)
     
     while index < src[count].length do 
       
-      if src[count][index]
-  
+      if src[count][index].class == str.class
+        str += src[count][index]
+      end
+      index += 1 
+    end 
+    count += 1
+  end 
+  str
 end
